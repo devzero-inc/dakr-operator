@@ -30,4 +30,5 @@ webhooks:
     admissionReviewVersions: ["v1"]
     sideEffects: None
     timeoutSeconds: 2
+    failurePolicy: Ignore
 {{- end }} 

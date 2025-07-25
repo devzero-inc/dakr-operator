@@ -43,6 +43,8 @@ operator:
   #   key: "KUBE_CONTEXT_NAME"            # Key in the ConfigMap's data to get the cluster name from
   port: 9443
   debugPort: 8082
+  features:
+    argocdPatching: false # if set, the operator will patch argo applications to ignore differences from the dakr operator
   serviceAccount:
     name: "dakr-operator-sa"
     # Annotations for cloud provider IAM integration.
